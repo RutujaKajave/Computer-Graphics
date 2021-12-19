@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>KajaveRutuja_ProjC</title>
+
+</head>
+
+<body style="background-color:Black;" onload="main()" onresize="resize()" style="margin:10px;padding:10px;width:100%;height:100%;">
+ <br>
+  <b> <font size="+2" style="color:white;"><center>Demo Day: Project C</center></font></b>
+  <font style="color:white;"><center> Name: Rutuja Kajave </center> </font>
+  <font style="color:white;"><center> NetId: RPK9907</center></font>
+    <b style="color:white;">_______________________________________________________________________________________________________________________________________________________________________________</b><br><br>
+    <canvas  id="webgl" width="2000" height="2000">
+    Please use a browser that supports "canvas"
+
+    </canvas>
+    <br>
+    <br>
+     <b style="color:white;"> Functionalities : </b><br>
+     <b style="color:white;">_______________________________________________________________________________________________________________________________________________________________________________</b><br>
+	<p style="color:white;"> 1. Press the arrow keys to move around the field.</p>
+	<p style="color:white;"> 2. Press 'W', 'S', 'A', 'D' keys to change perspective view of the field </p>
+	<p style="color:white;"> 3. Press 'I', 'J', 'K', 'L' keys to change the position of the lights </p>
+	<p style="color:white;"> 4. Press 'Space' key to turn the lamp light on or off </p>
+	<p style="color:white;"> 5. Press 'Enter' key to turn the headlight on or off </p>
+	<p style="color:white;"> 6. Press 'M' key to change the material/colour of the sphere </p>
+	<b style="color:white;">______________________________________________________________________________________________________________________________________________________________________________</b><br>
+    <p style="color:white;">Change between Lighting and Shading: </p>
+    <div style="color:white;" id="lightMode" style="display:inline"> Lighting Effect :</div>:<br>
+    <button style="font-size:20px;" onclick="changeLighting()" >Change Lighting Effect</button><br><br>
+    <div style="color:white;" id="shadeMode" style="display:inline"> Shading Effect : </div> :<br>
+     <button style="font-size:20px;" onclick="changeShading()">Change Shading Effect</button> 
+    <br>
+    <b style="color:white;">______________________________________________________________________________________________________________________________________________________________________________</b><br>
+    <p style="color:white;">
+        <div id="stretcher">
+            <p style="color:white;">Light source : </p>
+            <p style="color:white;">Lamp-Ambi-Red : <input id="lampAmbiR" size="3" value="1.0" /> Lamp-Ambi-Green :<input id="lampAmbiG" size="3" value="1.0" />Lamp-Ambi-Blue :<input id="lampAmbiB" size="3" value="1.0" /> </p>
+            <p style="color:white;">Lamp-Diff-Red : <input id="lampDiffR" size="3" value="1.0" /> Lamp-Diff-Green :<input id="lampDiffG" size="3" value="1.0" /> Lamp-Diff-Blue :<input id="lampDiffB" size="3" value="1.0" /> </p>
+            <p style="color:white;">Lamp-Spec-Red :<input id="lampSpecR" size="3" value="1.0" /> Lamp-Spec-Green :<input id="lampSpecG" size="3" value="1.0" /> Lamp-Spec-Blue :<input id="lampSpecB" size="3" value="1.0" /> </p>
+            
+            <button style="font-size:20px;" type="button" id="submit" onclick="onSubmit()">S U B M I T</button>
+        </div>
+    </p>
+       <b style="color:white;">_______________________________________________________________________________________________________________________________________________________________________________</b><br>
+    
+    <script src="..\KajaveRutuja_Projc\lib\webgl-utils.js"></script>
+    <script src="..\KajaveRutuja_ProjC\lib\webgl-debug.js"></script>
+    <script src="..\KajaveRutuja_ProjC\lib\cuon-utils.js"></script>
+    <script src="..\KajaveRutuja_ProjC\lib\cuon-matrix-mod.js"></script>
+    <script src="..\KajaveRutuja_ProjC\lib\cuon-matrix-quat.js"></script>
+    <script src="..\KajaveRutuja_ProjC\KajaveRutuja_ProjB.js"></script>
+    <script src="..\KajaveRutuja_Projc\lights-JT.js"></script>
+    <script src="..\KajaveRutuja_Projc\materials_Ayerdi.js"></script>
+    <script src="..\KajaveRutuja_Projc\KajaveRutuja_ProjC.js"></script>
+</body>
+
+</html>
